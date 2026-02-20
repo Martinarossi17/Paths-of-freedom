@@ -1,46 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="Sentieri di Libertà" />
-    <meta property="og:description" content="Your travel companion to authentic and unforgettable experiences around the world" />
-    <meta
-      property="og:image"
-      content="https://static.getmocha.com/og.png"
-      type="image/png"
-    />
-    <meta
-      property="og:url"
-      content="https://getmocha.com"
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:author" content="Mocha" />
-    <meta property="og:site_name" content="Mocha" />
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:site" content="@get_mocha" />
-    <meta property="twitter:title" content="Sentieri di Libertà" />
-    <meta property="twitter:description" content="Your travel companion to authentic and unforgettable experiences around the world" />
-    <meta
-      property="twitter:image"
-      content="https://static.getmocha.com/og.png"
-      type="image/png"
-    />
-    <link
-      rel="shortcut icon"
-      href="https://static.getmocha.com/favicon.ico"
-      type="image/x-icon"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="https://static.getmocha.com/apple-touch-icon.png"
-      type="image/png"
-    />
-    <title>Sentieri di Libertà</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/react-app/main.tsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paths of Freedom</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background-color: #fff; padding: 10px; }
+        .logo { color: red; font-size: 24px; }
+        nav { margin: 10px 0; }
+        nav a { color: red; margin-right: 15px; text-decoration: none; }
+        .hero { background-image: url('barcelona-hero.jpg'); height: 400px; background-size: cover; display: flex; align-items: center; justify-content: center; color: white; text-align: center; }
+        .hero h1 { color: pink; }
+        .mission, .my-story, .travel-philosophy, .contact { padding: 20px; }
+        .my-story img { width: 100%; max-width: 300px; }
+        .philosophy-box { background-color: white; margin: 10px; padding: 20px; border-radius: 5px; }
+        .footer { background-color: red; color: white; text-align: center; padding: 10px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Sentieri di libertà</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <div class="hero">
+        <h1>Martina: Explorer, Storyteller, Freedom Lover</h1>
+    </div>
+    <div class="mission">
+        <h2>Our Mission</h2>
+        <p>Empowering individuals to embrace freedom through storytelling and exploration! 🌍✨</p>
+    </div>
+    <div class="my-story">
+        <h2>My Story</h2>
+        <img src="hot-air-balloon.jpg" alt="Hot Air Balloon"/>
+        <p>Join me on my journey of adventures and discoveries! 🎈</p>
+    </div>
+    <div class="travel-philosophy">
+        <h2>My Travel Philosophy</h2>
+        <div class="philosophy-box">Adventure is worthwhile! 💼</div>
+        <div class="philosophy-box">The journey, not the destination!</div>
+        <div class="philosophy-box">To travel is to live! ✈️</div>
+    </div>
+    <div class="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <input type="submit" value="Submit">
+        </form>
+        <div>
+            <h3>Follow Me</h3>
+            <a href="#">Facebook</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">Twitter</a>
+        </div>
+    </div>
+    <div class="map">
+        <h2>My Travels</h2>
+        <p>Map showing the places I've been!</p>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2026 Martina Rossi. All rights reserved.</p>
+    </footer>
+</body>
 </html>
